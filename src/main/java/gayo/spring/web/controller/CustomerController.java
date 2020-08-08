@@ -34,7 +34,7 @@ public class CustomerController {
 	CustomerService service;
 	
 	//회원가입 get
-	@RequestMapping(value = "/regster", method = RequestMethod.POST)
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public String postRegister(CustomerVO vo) throws Exception{
 		logger.info("post register");
 		service.register(vo);
